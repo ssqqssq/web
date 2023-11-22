@@ -1,0 +1,18 @@
+{% extends 'civil_talk/all_page.html' %}
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="circulation">
+        <h1>Статусы обращений</h1>
+        {% if articles %}
+            {% for article in articles %}
+                <div class="all_circulations">
+                    <h3>{{article.title_talk}}</h3>
+                    <p>{{article.date}}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Обращений нет</p>
+        {% endif %}
+    </div>
+{% endblock %}

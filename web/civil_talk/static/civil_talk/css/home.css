@@ -1,0 +1,143 @@
+body {
+    background: #2c2c2c;
+}
+
+.home {
+    color: #fff;
+    font-wieght: bold;
+    center;
+}
+aside{
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+aside .logo{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none
+}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul li a:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+}
+
+main .features{
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+aside span {
+    font-size: 60px; /* Измените на желаемый размер шрифта */
+    color: #fff; /* Цвет текста */
+}
+main .features h1 {font-size: 50px;}
+
+form {
+    width: 80%; /* Устанавливаем ширину формы в процентах от родительского элемента */
+    max-width: 700px; /* Ограничиваем максимальную ширину */
+    margin: 20px auto; /* Центрируем форму с автоматическими отступами по бокам и отступами сверху и снизу */
+    padding: 20px; /* Внутренние отступы для формы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Небольшая тень для формы */
+    background-color: white; /* Фон формы, если необходим */
+    border-radius: 8px; /* Скругление углов формы */
+}
+
+input[type="text"].circulate_request,
+textarea.form-control {
+    width: calc(100% - 40px); /* Вычитаем паддинги по бокам из 100% ширины */
+    padding: 10px; /* Внутренние отступы для полей ввода */
+    margin-bottom: 10px; /* Отступ снизу для каждого поля */
+    border: 1px solid #ccc; /* Граница для полей ввода */
+    border-radius: 4px; /* Скругление углов полей ввода */
+}
+
+button.btn.btn-warning {
+    padding: 10px 20px; /* Внутренние отступы для кнопки */
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    width: auto; /* Автоматическая ширина для кнопки */
+    background-color: #ffc107; /* Цвет фона для кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 4px; /* Скругление углов кнопки */
+    color: white; /* Цвет текста кнопки */
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    display: block; /* Блочное отображение, чтобы кнопка была на своей линии */
+    margin-left: auto; /* Автоматический отступ слева для выравнивания кнопки по правому краю */
+    margin-right: 0; /* Отступ справа */
+}
+
+
+/* Стили для общего контейнера */
+.circulation {
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+/* Стили для заголовка контейнера */
+.circulation h1 {
+    color: white;
+    margin-bottom: 20px; /* Добавляем нижний отступ для заголовка */
+}
+
+/* Стили для каждого блока обращения */
+.circulation .all_circulations {
+    background-color: #f5f5dc; /* Бежевый цвет фона */
+    padding: 15px; /* Внутренние отступы для содержимого блока */
+    margin-bottom: 10px; /* Отступ снизу между блоками обращений */
+    border-radius: 5px; /* Слегка скругляем углы */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Добавляем тень для блоков */
+
+    /* Дополнительные стили для центрирования содержимого */
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Элементы упорядочиваются в столбец */
+    align-items: center; /* Выравниваем элементы по центру по горизонтали */
+    justify-content: center; /* Выравниваем содержимое по центру по вертикали */
+}
+
+/* Стилизация заголовка обращения */
+.circulation .all_circulations h3 {
+    margin-top: 0; /* Убираем верхний отступ у заголовка */
+    margin-bottom: 10px; /* Добавляем небольшой отступ снизу заголовка */
+}
+
+/* Стилизация даты обращения */
+.circulation .all_circulations p {
+    margin: 0; /* Убираем отступы у параграфа */
+}
+
+
+
+
+

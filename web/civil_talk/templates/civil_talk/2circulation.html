@@ -1,0 +1,17 @@
+{% extends 'civil_talk/all_page.html' %}
+{% load static %}
+{% block title %}Создание обращения{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Подать обращение</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title_talk }}<br>
+            {{ form.full_text }}<br>
+            <span>{{ error }} </span>
+            <button type="submit" id="submit-button" class="btn btn-warning">отправить</button>
+        </form>
+    </div>
+    <script src="{% static 'civil_talk/js/animation.js' %}"></script>
+{% endblock %}
